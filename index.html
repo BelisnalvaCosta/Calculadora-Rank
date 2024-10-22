@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Partidas Rankeadas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Partidas Rankeadas</h1>
+        <div class="input-group">
+            <label for="victories">Vitórias:</label>
+            <input type="number" id="victories" min="0">
+        </div>
+        <div class="input-group">
+            <label for="defeats">Derrotas:</label>
+            <input type="number" id="defeats" min="0">
+        </div>
+        <button onclick="calculadoraRank()">Calcular</button>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="calcRank.js"></script>
+</body>
+</html>
